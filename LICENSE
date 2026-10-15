@@ -1,0 +1,21 @@
+Copyright (c) 2026 Robyn Miller. All rights reserved.
+
+This page, its design and its code may not be copied, reproduced, modified or
+redistributed without written permission.
+
+Material inside it that belongs to others keeps its own terms:
+  - The record of the wars, the strikes' places and the moments' facts: drawn from
+    Wikipedia (CC BY-SA 4.0) and the news reports it cites; the words are this map's own.
+  - Quoted statements: the words of public officials, quoted briefly with links to
+    their sources. Donald Trump's posts via CNN's archive of Truth Social
+    (ix.cnn.io/data/truth-social); Pentagon briefings via transcripts on Rev.com.
+  - Map tiles: © OpenStreetMap contributors (ODbL 1.0), served by OpenFreeMap
+    (OpenMapTiles schema); fetched live, not re-hosted.
+  - Terrain: Terrarium elevation tiles (AWS Open Data; Mapzen, SRTM and others).
+  - Country shapes: Natural Earth (public domain).
+  - Ships through the Strait of Hormuz: IMF PortWatch.
+  - Prices: U.S. Energy Information Administration, U.S. Bureau of Labor Statistics
+    (via the Federal Reserve Bank of St. Louis, FRED), World Bank Pink Sheet.
+  - Casualty counts: HRANA, Israel's Ministry of Health, the U.S. Department of
+    Defense, Gulf governments, the International Maritime Organization.
+  - Map library: MapLibre GL JS (BSD 3-Clause).
