@@ -14,6 +14,7 @@ Material inside it that belongs to others keeps its own terms:
   - Terrain: Terrarium elevation tiles (AWS Open Data; Mapzen, SRTM and others).
   - Country shapes: Natural Earth (public domain).
   - Ships through the Strait of Hormuz: IMF PortWatch daily transit counts.
+  - Warships: USNI News Fleet and Marine Tracker (weekly), read for the sea area of each unit.
   - Prices: U.S. Energy Information Administration, U.S. Bureau of Labor Statistics
     (via the Federal Reserve Bank of St. Louis, FRED), World Bank Pink Sheet.
   - Casualty counts: HRANA, Israel's Ministry of Health, the U.S. Department of
