@@ -15,6 +15,15 @@
   .maplibregl-ctrl-top-right { top: auto !important; bottom: 352px; right: 14px; }
   @media (max-width: 760px) { .maplibregl-ctrl-top-right { top: calc(4px + env(safe-area-inset-top, 0px)) !important; bottom: auto; right: 4px; } }
   #boot { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); font: 11px Menlo, "SF Mono", "Cascadia Mono", Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace; letter-spacing: 0.3em; color: rgba(255,255,255,0.6); z-index: 5; }
+  /* phones (her word, 2026-10-17): only the map, and across the middle, in large type, that this does not work on them */
+  #phone { display: none; position: fixed; inset: 0; z-index: 30; align-items: center; justify-content: center; pointer-events: none; padding: 24px; box-sizing: border-box; }
+  #phone p { margin: 0; padding: 18px 20px; background: rgba(0,0,0,0.62); color: #fff; text-align: center;
+    font: bold 26px/1.35 Menlo, "SF Mono", "Cascadia Mono", Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace; letter-spacing: 0.12em; }
+  @media (max-width: 760px), (max-height: 520px) and (pointer: coarse) {
+    #hud, #src-ov, #boot { display: none !important; }
+    #phone { display: flex; }
+  }
+  @media (max-width: 380px) { #phone p { font-size: 22px; } }
 </style>
   <script type="module" crossorigin>(function(){const z=document.createElement("link").relList;if(z&&z.supports&&z.supports("modulepreload"))return;for(const se of document.querySelectorAll('link[rel="modulepreload"]'))V(se);new MutationObserver(se=>{for(const ce of se)if(ce.type==="childList")for(const A of ce.addedNodes)A.tagName==="LINK"&&A.rel==="modulepreload"&&V(A)}).observe(document,{childList:!0,subtree:!0});function Z(se){const ce={};return se.integrity&&(ce.integrity=se.integrity),se.referrerPolicy&&(ce.referrerPolicy=se.referrerPolicy),se.crossOrigin==="use-credentials"?ce.credentials="include":se.crossOrigin==="anonymous"?ce.credentials="omit":ce.credentials="same-origin",ce}function V(se){if(se.ep)return;se.ep=!0;const ce=Z(se);fetch(se.href,ce)}})();var rf=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function nf(W){return W&&W.__esModule&&Object.prototype.hasOwnProperty.call(W,"default")?W.default:W}var tm={exports:{}};/**
  * MapLibre GL JS
@@ -1314,5 +1323,6 @@ Israel from Israeli outlets. The most-cited outlets lean toward one side or the 
 <div id="map"></div>
 <div id="hud"></div>
 <div id="boot">PREPARING THE MAP</div>
+<div id="phone"><p>THIS APPLICATION DOES NOT WORK ON MOBILE PHONES</p></div>
 </body>
 </html>
